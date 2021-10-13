@@ -28,41 +28,63 @@
                 <p>Se você quer aprender mais sobre comunicação, planejamento, canais, imagem, vídeo, vendas, influenciadores 
                 e expansão, preencha os dados abaixo e faça o download do conteúdo gratuitamente.</p>
             </div>
+        
+            <form id="input-area" class="form">
+                <div class="left-side">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder=" " id="name" name="name">
+                        <label for="name" class="form-label">Nome</label>
+                    </div>
+    
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder=" " id="email" name="email">
+                        <label for="email" class="form-label">Email</label>
+                    </div>
 
-            <form id="input-area">
-                <div class="half-box">
-                    <input type="text" name="name" id="name" placeholder="Nome">
+                    <div class="agreement-radio">
+                        <input type="radio" name="agreement" id="agreement">
+                        <!-- Arrumar o espaçamento que precisa dar nessa área -->
+                        <label for="agreement" id="agreement-label">Você concorda com nossos termos de uso e <a href="#"><strong>Política de Privacidade</strong></a>?</label>
+                    </div>
+                   
+                    
                 </div>
 
-                <div class="half-box">
-                    <input type="email" name="email" id="email" placeholder="Email">
+                <div class="right-side">
+                    <div class="radio-buttons">
+                        <h2>Já sou empreendedor?</h2>
+
+                        <div class="option1">
+                            <input type="radio" name="radio" value="sim">
+                            <span>Sim</span>
+                        </div>                        
+                            
+                        <div class="option2">
+                            <input type="radio" name="radio" value="nao">
+                            <span>Não</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Tem um problema nesse label (quando clico no texto ele não gera o focus) -->
+                    <div class="quero-empreender">
+                        <input type="text" class="form-control" placeholder="Quero empreender"  id= "quero-empreender" name="quero-empreender">
+                        <label for="name" class="form-label"></label>
+                        <!-- Deixei em branco por enquanto porque não encontrei solução -->
+                    </div>
+
+                    <div class="download-btn">
+                        <button type="submit">Download <img src="img/seta.png" alt="Download"></button>
+                    </div>
                 </div>
-
-                <div>
-                    <input type="checkbox" name="agreement" id="agreement">
-                    <label for="agreement" id="agreement-label">Você concorda com nossos<a href="#"> termos de uso e Política de Privacidade</a>?</label>
-                </div>
-
-                <div class="half-box">
-                    <h1>Já sou empreendedor</h1>
-                    <input type="radio" id="yes" name="yes" value="sim">
-                    <label for="yes">Sim</label><br>
-
-                    <input type="radio" id="nao" name="nao" value="nao">
-                    <label for="nao">Não</label><br>
-                </div>
-
-                <div class="half-box">
-                    <input type="text" name="empreender" id="empreender" placeholder="Quero empreender">
-                </div>
-
-                <div class="half-box">
-                    <input id="btn-submit" type="submit" value="Download">
-                </div>
-
             </form>
 
-        </div>
+            <div class="logo">
+                <h1>Ketchum</h1>
+                <h3>empathy + intelligence</h3>
+            </div>
+
+        </div> 
+            
     </div>
 </body>
 </html>

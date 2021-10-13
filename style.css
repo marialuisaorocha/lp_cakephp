@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     --input-box: #E6E6E6;
     --download-btn: #162E27;
+    --dark-green: #162F27;
 }
 
 * {
@@ -21,7 +22,6 @@ body {
 }
 
 .left {
-    height: 100vh;
     margin-top: 10vh;
     margin-left: 10vh;
     margin-right: 20vh;
@@ -52,8 +52,114 @@ body {
     margin-top: 10vh;
 }
 
+/* Input Area */
 #input-area { 
     background-color: var(--input-box);
     margin-top: 5vh;
     padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.form-group {
+    margin-bottom: .5em;
+    transition: all .3s;
+}
+
+.form-label {
+    font-size: 1em;
+    color: #aaa;
+    display: block;
+    opacity: 1;
+    transform: translateY(-2.10em);
+    transform-origin: 0 0;
+    transition: all .3s;
+    margin-left: 15px;
+}
+
+.form-control {
+    box-shadow: none;
+    background-color: #fff;
+    border-radius: 0px;
+    border-color: transparent;
+    border-style: none none solid none;
+    width: 100%;
+    transition: all .5s;
+    padding: 5px;
+    height: 43px;
+}
+
+.form-control::placeholder{
+    color: transparent;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    outline: none;
+    border-color: orange;
+}
+
+.form-control:focus + .form-label{
+    transform: translateY(-4em) scale(.8);
+}
+
+.form-group:focus-within{
+    transform: scale(1.05,1.05);
+}
+
+/* Lado direito da input area */
+.right-side { 
+    margin-left: 43px;
+    
+}
+
+.radio-buttons div{
+    display: inline-block;
+}
+
+.radio-buttons {
+    text-align: center;
+}
+
+.option1 {
+    margin-right: 80px;
+}
+
+.quero-empreender {
+    margin-top: 17px;
+}
+
+.download-btn {
+    margin-top: 2em;
+    text-align: right;
+}
+
+.download-btn button {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 5px 5px 5px 15px;
+    font-size: 18px;
+}
+
+/* Não consigo alinhar a flecha com o texto de Download */
+.download-btn img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* Logo */
+.logo h1 {
+    text-align: right;
+    margin-right: 7.5vw;
+    font-weight: 800;
+}
+
+.logo h3 {
+    text-align: right;
+    margin-top: -13px;
+}
+
+.logo {
+    margin-top: 7vh;
+    color: var(--dark-green);
 }

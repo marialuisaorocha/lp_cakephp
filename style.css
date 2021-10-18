@@ -19,24 +19,34 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
-.left {
+.main-container a{
+    color: blue;
+    text-decoration: none;
+}
+
+.main-container a:hover {
+    text-decoration: underline;
+}
+
+.main-container > .left {
     margin-top: 10vh;
     margin-left: 10vh;
     margin-right: 20vh;
-    
+
 }
 
-.left h1 {
+.main-container > .left h1 {
     font-size: 60px;
 }
 
-.left h3 {
+.main-container > .left h3 {
     font-size: 20px;
 }
 
-.right {
+.main-container > .right {
     height: 100vh;
     margin-right: 15vh;
 }
@@ -48,12 +58,12 @@ body {
     height: 100vh;
 }
 
-.text {
+.site-description {
     margin-top: 10vh;
 }
 
 /* Input Area */
-#input-area { 
+#input-area {
     background-color: var(--input-box);
     margin-top: 5vh;
     padding: 40px;
@@ -108,10 +118,10 @@ body {
     transform: scale(1.05,1.05);
 }
 
-/* Lado direito da input area */
-.right-side { 
+/* Lado direito da input area principal */
+.main-form .right {
     margin-left: 43px;
-    
+
 }
 
 .radio-buttons div{
@@ -160,6 +170,6 @@ body {
 }
 
 .logo {
-    margin-top: 7vh;
+    margin-top: 40px;
     color: var(--dark-green);
 }

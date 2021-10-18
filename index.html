@@ -6,36 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <div class="main-container">
+        <!-- Especificar melhor as classes, por exemplo: text-container, image-container -->
         <div class="left">
             <h1>Comunicação & Empreendedorismo</h1>
-            
-            <h3>Do off ao on: saiba como se comunicar com seu público 
+
+            <h3>Do off ao on: saiba como se comunicar com seu público
                 e alavancar seu negócio</h3>
         </div>
+
         <div class="right">
-            <div class="text">
-                <p>Esse projeto inovador tem o objetivo de contribuir para o sucesso de microempresários em meio à pandemia, que decidiram iniciar suas empresas seja por desejo ou necessidade. 
+            <div class="site-description">
+                <p>Esse projeto inovador tem o objetivo de contribuir para o sucesso de microempresários em meio à pandemia, que decidiram iniciar suas empresas seja por desejo ou necessidade.
                 Esperamos que todes sejam bem-sucedidos com o apoio desse  material, desenvolvido por inúmeras mãos.</p>
                 <br>
-                <p>Pensando em uma forma de ajudar você, que deseja abrir um negócio ou quer aprimorar o conteúdo da sua empresa, a Ketchum - 
-                consultoria global de comunicação presente em 70 países, especializada em projetos que reúnem inteligência, criatividade e estratégia - reuniu alguns de seus especialistas, de forma voluntária, para criar 
-                um direcionamento de comunicação exclusivo, que visa  aumentar a conversa com seu público-alvo e a taxa 
+                <p>Pensando em uma forma de ajudar você, que deseja abrir um negócio ou quer aprimorar o conteúdo da sua empresa, a Ketchum -
+                consultoria global de comunicação presente em 70 países, especializada em projetos que reúnem inteligência, criatividade e estratégia - reuniu alguns de seus especialistas, de forma voluntária, para criar
+                um direcionamento de comunicação exclusivo, que visa  aumentar a conversa com seu público-alvo e a taxa
                 de conversão de vendas.</p>
                 <br>
-                <p>Se você quer aprender mais sobre comunicação, planejamento, canais, imagem, vídeo, vendas, influenciadores 
+                <p>Se você quer aprender mais sobre comunicação, planejamento, canais, imagem, vídeo, vendas, influenciadores
                 e expansão, preencha os dados abaixo e faça o download do conteúdo gratuitamente.</p>
             </div>
-        
-            <form id="input-area" class="form">
-                <div class="left-side">
+
+            <form id="input-area" class="main-form">
+                <div class="left">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder=" " id="name" name="name">
                         <label for="name" class="form-label">Nome</label>
                     </div>
-    
+
                     <div class="form-group">
                         <input type="email" class="form-control" placeholder=" " id="email" name="email">
                         <label for="email" class="form-label">Email</label>
@@ -46,25 +49,25 @@
                         <!-- Arrumar o espaçamento que precisa dar nessa área -->
                         <label for="agreement" id="agreement-label">Você concorda com nossos termos de uso e <a href="#"><strong>Política de Privacidade</strong></a>?</label>
                     </div>
-                   
-                    
+
+
                 </div>
 
-                <div class="right-side">
+                <div class="right">
                     <div class="radio-buttons">
                         <h2>Já sou empreendedor?</h2>
 
-                        <div class="option1">
+                        <label class="option1">
                             <input type="radio" name="radio" value="sim">
                             <span>Sim</span>
-                        </div>                        
-                            
+                        </label>
+
                         <div class="option2">
-                            <input type="radio" name="radio" value="nao">
-                            <span>Não</span>
+                            <input type="radio" name="radio" value="nao" id="nao">
+                            <label for="nao">Não</label>
                         </div>
                     </div>
-                    
+
                     <!-- Tem um problema nesse label (quando clico no texto ele não gera o focus) -->
                     <div class="quero-empreender">
                         <input type="text" class="form-control" placeholder="Quero empreender"  id= "quero-empreender" name="quero-empreender">
@@ -83,8 +86,8 @@
                 <h3>empathy + intelligence</h3>
             </div>
 
-        </div> 
-            
+        </div>
+
     </div>
 </body>
 </html>

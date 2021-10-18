@@ -1,0 +1,76 @@
+@media (max-width: 1400px) {
+    .main-container > .left h1 {
+        font-size: 45px;
+    }
+
+    .main-container > .left {
+        margin: 40px 30px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 630px) {
+
+    body {
+        background-size: 200%;
+        background-position: -30px top;
+    }
+
+    .site-description {
+        margin-top: 400px;
+    }
+    .main-container {
+        grid-template-columns: 1fr;
+        margin: 40px;
+        position: relative;
+    }
+
+    .main-container > .right {
+        margin: 0;
+    }
+
+    #input-area {
+        margin-top: 30px;
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .main-form .right {
+        margin: 0;
+    }
+
+    .main-form #agreement-label{
+        font-size: 15px;
+    }
+
+    .main-form .agreement-radio {
+        margin-bottom: 20px;
+        position: absolute;
+        bottom: -82%;
+        text-align: center;
+    }
+    .logo h1{
+        margin-left: 133px;
+        text-align: left;
+        margin-right: 0;
+    }
+
+    .logo h3{
+        text-align: center;
+        margin-left: 60px;
+    }
+
+    .download-btn {
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .radio-buttons h2 {
+        font-size: 35px;
+    }
+
+}

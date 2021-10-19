@@ -67,13 +67,25 @@ body {
     background-color: var(--input-box);
     margin-top: 5vh;
     padding: 40px;
+    grid-column-gap: 40px;
+    grid-row-gap: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "name radio-buttons"
+        "email quero-empreender"
+        "agreement-radio download-btn";
+}
 
+.quero-empreender {
+    grid-area: quero-empreender;
+}
+
+.agreement-radio {
+    grid-area: agreement-radio;
 }
 
 .form-group {
-    margin-bottom: .5em;
     transition: all .3s;
 }
 
@@ -130,19 +142,24 @@ body {
 
 .radio-buttons {
     text-align: center;
+    grid-area: "radio-buttons";
+}
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
 }
 
 .option1 {
     margin-right: 80px;
 }
 
-.quero-empreender {
-    margin-top: 17px;
-}
-
 .download-btn {
-    margin-top: 2em;
     text-align: right;
+    grid-area: "download-btn";
 }
 
 .download-btn button {

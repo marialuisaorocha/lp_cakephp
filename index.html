@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="privacypopup.css">
+    <script src="privacy-popup.js"></script>
 </head>
 <body>
     <div class="main-container">
@@ -80,7 +82,25 @@
             </div>
 
         </div>
+    </div>
 
+    <div id="privacy-popup" class="popup-container">
+        <div class="popup-content">
+            <h1>Política de privacidade</h1>
+
+            <div class="policy-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime temporibus corrupti minus porro. Corrupti suscipit quis vero molestiae, ea ut harum, ipsum maxime cumque iure, recusandae quasi eaque nesciunt saepe.</p>
+            </div>
+
+            <div class="agreement-radio">
+                <input type="checkbox" name="iagree" id="iagree">
+                <label for="iagree" id="iagree">Li e concordo com os Termos de Política de Privacidade</label>
+            </div>
+
+            <button type="submit">Concordar <img src="img/seta.png" alt="Concordar"></button>
+
+
+        </div>
     </div>
 </body>
 </html>

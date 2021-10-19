@@ -167,6 +167,7 @@ body {
     color: white;
     padding: 5px 5px 5px 15px;
     font-size: 18px;
+    cursor: pointer;
 }
 
 /* Não consigo alinhar a flecha com o texto de Download */

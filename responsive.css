@@ -30,6 +30,11 @@
     .site-description {
         margin-top: 200px;
     }
+
+    /* Popup */
+    .popup-container {
+        padding: 0;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -40,6 +45,22 @@
 
     .site-description {
         margin-top: 20px;
+    }
+
+    .check-agreement {
+        flex-wrap: wrap;
+    }
+
+    .check-agreement > * {
+        flex: 1 0 100%;
+    }
+
+    .agree-checkbox {
+        margin-top: 10px;
+    }
+
+    .agree-btn {
+        margin-top: 5px;
     }
 }
 
@@ -111,6 +132,33 @@
 
     .site-description{
         padding: 20px;
+    }
+
+    .popup-content {
+    }
+
+    .popup-content h1 {
+        font-size: 15px;
+    }
+
+    .popup-container {
+        align-items: center;
+    }
+
+    .check-agreement {
+        flex-wrap: wrap;
+    }
+
+    .check-agreement > * {
+        flex: 1 0 100%;
+    }
+
+    .agree-btn {
+        margin-top: 10px;
+    }
+
+    .agree-checkbox {
+        margin-top: 10px;
     }
 
 }

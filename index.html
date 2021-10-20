@@ -7,8 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="privacypopup.css">
-    <script src="privacy-popup.js"></script>
+    <script type="module" src="privacy-popup.js"></script>
 </head>
 <body>
     <div class="main-container">
@@ -48,7 +47,7 @@
 
                     <div class="agreement-radio">
                         <input type="radio" name="agreement" id="agreement">
-                        <label for="agreement" id="agreement-label">Você concorda com nossos termos de uso e <a href="#"><strong>Política de Privacidade</strong></a>?</label>
+                        <label for="agreement" id="agreement-label">Você concorda com nossos termos de uso e <a href="#" class="politica-privacidade"><strong>Política de Privacidade</strong></a>?</label>
                     </div>
 
                     <div class="radio-buttons">
@@ -86,19 +85,28 @@
 
     <div id="privacy-popup" class="popup-container">
         <div class="popup-content">
-            <h1>Política de privacidade</h1>
+            <button class="close">X</button>
+            <h1>POLÍTICA DE PRIVACIDADE</h1>
 
             <div class="policy-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime temporibus corrupti minus porro. Corrupti suscipit quis vero molestiae, ea ut harum, ipsum maxime cumque iure, recusandae quasi eaque nesciunt saepe.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla necessitatibus autem nostrum libero quam harum in, consequatur perspiciatis aperiam quos, modi, aut officiis! Temporibus corporis consectetur aperiam dolores sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla necessitatibus autem nostrum libero quam harum in, consequatur perspiciatis aperiam quos, modi, aut officiis! Temporibus corporis consectetur aperiam dolores sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla necessitatibus autem nostrum libero quam harum in, consequatur perspiciatis aperiam quos, modi, aut officiis! Temporibus corporis consectetur aperiam dolores sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla necessitatibus autem nostrum libero quam harum in, consequatur perspiciatis aperiam quos, modi, aut officiis! Temporibus corporis consectetur aperiam dolores sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla necessitatibus autem nostrum libero quam harum in, consequatur perspiciatis aperiam quos, modi, aut officiis! Temporibus corporis consectetur aperiam dolores sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla necessitatibus autem nostrum libero quam harum in, consequatur perspiciatis aperiam quos, modi, aut officiis! Temporibus corporis consectetur aperiam dolores sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla necessitatibus autem nostrum libero quam harum in, consequatur perspiciatis aperiam quos, modi, aut officiis! Temporibus corporis consectetur aperiam dolores sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla necessitatibus autem nostrum libero quam harum in, consequatur perspiciatis aperiam quos, modi, aut officiis! Temporibus corporis consectetur aperiam dolores sit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla necessitatibus autem nostrum libero quam harum in, consequatur perspiciatis aperiam quos, modi, aut officiis! Temporibus corporis consectetur aperiam dolores sit.</p>
+
             </div>
 
-            <div class="agreement-radio">
-                <input type="checkbox" name="iagree" id="iagree">
-                <label for="iagree" id="iagree">Li e concordo com os Termos de Política de Privacidade</label>
+            <div class="check-agreement">
+                <label for="iagree" id="iagree"><input type="checkbox" name="iagree" id="iagree" class="agree-checkbox">Li e concordo com os Termos de Política de Privacidade</label>
+
+                <button type="submit" class="agree-btn">Concordar <img src="img/seta.png" alt="Concordar"></button>
             </div>
-
-            <button type="submit">Concordar <img src="img/seta.png" alt="Concordar"></button>
-
 
         </div>
     </div>

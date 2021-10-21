@@ -87,14 +87,13 @@
         margin: 20px;
         padding: 40px;
         grid-template-columns: 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "name"
             "email"
             "radio-buttons"
             "quero-empreender"
             "agreement-radio"
             "download-btn";
-        
     }
 
     .main-form .right {
@@ -108,17 +107,12 @@
     .main-form .agreement-radio {
         padding: 0 40px;
     }
-    
-    /* Posicionamento do logo */
-    .logo h1{
-        margin-left: 133px;
-        text-align: left;
-        margin-right: 0;
-    }
 
-    .logo h3{
-        text-align: center;
-        margin-left: 60px;
+    /* Posicionamento do logo */
+    .logo {
+        margin-top: 0;
+        float: none;
+        margin-left: 180px;
     }
 
     /* Posicionamento do botão */
@@ -132,9 +126,6 @@
 
     .site-description{
         padding: 20px;
-    }
-
-    .popup-content {
     }
 
     .popup-content h1 {

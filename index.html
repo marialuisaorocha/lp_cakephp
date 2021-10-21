@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <script type="module" src="privacy-popup.js"></script>
+    <title>Ketchum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="module" src="js/privacy-popup.js"></script>
+    <script type="module" src="js/validation.js"></script>
 </head>
 <body>
     <div class="main-container">
@@ -36,17 +37,19 @@
             <form id="input-area" class="main-form">
 
                     <div class="form-group name">
-                        <input type="text" class="form-control" placeholder=" " id="name" name="name">
+                        <input type="text" class="form-control" placeholder=" " id="name" name="name" required>
                         <label for="name" class="form-label">Nome</label>
+                        <span class="error"></span>
                     </div>
 
                     <div class="form-group email">
-                        <input type="email" class="form-control" placeholder=" " id="email" name="email">
+                        <input type="email" class="form-control" placeholder=" " id="email" name="email" required>
                         <label for="email" class="form-label">Email</label>
+                        <span class="error"></span>
                     </div>
 
                     <div class="agreement-radio">
-                        <input type="radio" name="agreement" id="agreement">
+                        <input type="radio" name="agreement" id="agreement" required>
                         <label for="agreement" id="agreement-label">Você concorda com nossos termos de uso e <a href="#" class="politica-privacidade"><strong>Política de Privacidade</strong></a>?</label>
                     </div>
 
@@ -65,8 +68,9 @@
                     </div>
 
                     <div class="quero-empreender form-group">
-                        <input type="text" class="form-control" placeholder="Quero empreender"  id= "quero-empreender" name="quero-empreender">
+                        <input type="text" class="form-control" placeholder="Quero empreender"  id= "quero-empreender" name="quero-empreender" required>
                         <label for="quero-empreender" class="form-label">Quero empreender</label>
+                        <span class="error"></span>
                     </div>
 
                     <div class="download-btn">
@@ -76,8 +80,7 @@
             </form>
 
             <div class="logo">
-                <h1>Ketchum</h1>
-                <h3>empathy + intelligence</h3>
+                <img src="img/logo.png" alt="Logo">
             </div>
 
         </div>

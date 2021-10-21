@@ -122,7 +122,7 @@ body {
     border-color: orange;
 }
 
-.form-control:focus + .form-label{
+.form-control:focus ~ .form-label, .form-control:valid ~ .form-label{
     transform: translateY(-4em) scale(.8);
 }
 
@@ -157,6 +157,20 @@ body {
     margin-right: 80px;
 }
 
+/* Mensagem de erro */
+span.error {
+    display: flex;
+    padding: 0;
+    background-color: rgba(255, 0 , 0, 0.2);
+    font-size: small;
+    margin-top: -10px;
+}
+
+span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+    margin-top: -10px;
+}
 /* Botão */
 .download-btn {
     text-align: right;
@@ -176,24 +190,12 @@ body {
     margin-right: 10px;
 }
 /* Logo */
-.logo h1 {
-    text-align: right;
-    margin-right: 7.5vw;
-    font-weight: 800;
-}
-
-.logo h3 {
-    text-align: right;
-    margin-top: -13px;
-}
-
 .logo {
     margin-top: 40px;
-    color: var(--dark-green);
+    float: right;
 }
 
 /* Iniciando estilização no pop up da política de privacidade */
-
 .popup-container {
     width: 100vw;
     height: 100vh;

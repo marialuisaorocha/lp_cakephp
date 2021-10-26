@@ -34,7 +34,7 @@
                 e expansão, preencha os dados abaixo e faça o download do conteúdo gratuitamente.</p>
             </div>
 
-            <form id="input-area" class="main-form">
+            <form name="form1" id="input-area" class="main-form">
 
                     <div class="form-group name">
                         <input type="text" class="form-control" placeholder=" " id="name" name="name" required>
@@ -51,20 +51,21 @@
                     <div class="agreement-radio">
                         <input type="radio" name="agreement" id="agreement" required>
                         <label for="agreement" id="agreement-label">Você concorda com nossos termos de uso e <a href="#" class="politica-privacidade"><strong>Política de Privacidade</strong></a>?</label>
+                        <span class="error"></span>
                     </div>
 
                     <div class="radio-buttons">
                         <h2>Já sou empreendedor?</h2>
-
+                        <span class="error"></span>
                         <label class="option1">
-                            <input type="radio" name="radio" value="sim">
+                            <input type="radio" name="souEmpreendedor" value="sim">
                             <span>Sim</span>
                         </label>
 
-                        <div class="option2">
-                            <input type="radio" name="radio" value="nao" id="nao">
-                            <label for="nao">Não</label>
-                        </div>
+                        <label class="option2">
+                            <input type="radio" name="souEmpreendedor" value="nao">
+                            <span>Não</span>
+                        </label>
                     </div>
 
                     <div class="quero-empreender form-group">
